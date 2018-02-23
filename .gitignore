@@ -1,0 +1,16 @@
+.DS_Store
+.idea
+*.ai
+*.log
+*.pdf
+*.psd
+build
+images/svg
+images/sprite.svg
+img
+*.sublime*
+node_modules/
+zalman-group/
+npm-debug.*
+maket/*.*
+Thumbs.db

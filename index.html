@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Food&Diabetes</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+
+    <!-- Pixel Glass -->
+    <style>
+      HTML {
+        background-repeat: no-repeat;
+        background-position:  50% 0;
+        /* По умолчанию показывается мобильный макет */
+      <!--  background-image: url( "maket/Landing-mobile.jpg" ); -->
+      }
+      /* Десктоп */
+      @media ( min-width: 1170px ) {
+        HTML {
+          /* Десктопный макет */
+          background-image: url( "maket/Landing-desktop.jpg" );
+        }
+      }
+    </style>
+    <link href="maket/styles.css" rel="stylesheet">
+    <script src="maket/script.js"></script>
+    <!-- // Pixel Glass -->
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__panel">
+        <button class="header__toggle" type="button">
+          <span class="visually-hidden">Переключатель навигации</span>
+          <span class="header__icon"></span>
+          <span class="header__icon"></span>
+          <span class="header__icon"></span>
+        </button>
+        <div class="header__logo"></div>
+      </div>
+      <nav class="header__menu">
+        <ul class="menu">
+          <li class="menu-item"><a href="">Задачи</a></li>
+          <li class="menu-item"><a href="">Партнеры</a></li>
+          <li class="menu-item"><a href="">Идеи</a></li>
+          <li class="menu-item"><a href="">Команда</a></li>
+          <li class="menu-item"><a href="">Результаты</a></li>
+          <li class="menu-item"><a href="">Контакты</a></li>
+        </ul>
+      </nav>
+      <h1 class="header__title">Food & diabetes</h1>
+      <p class="header__intro">Реализация социального проекта ХЕ-меню поможет решить ряд проблем и упростит жизнь людям страдающим сахарным диабетом (и не только)</p>
+    </header>
+
+    <main class="content">
+
+      <section class="about">
+        <h2 class="about__title">О проекте</h2>
+        <p class="about__text">К сожалению, с каждым годом ситуация с увеличением количества людей, страдающих сахарным диабетом, ожирением или другим заболеванием, связанным с нарушением обмена веществ, в Украине и во всем мире набирает обороты. И вы не поверите, насколько конечный результат нашего проекта упростит жизнь людям, которым жизненно важно следить и подсчитывать Ккал, Белки, Жиры, Углеводы и ХЕ. Также, эта информация будет полезна для людей, которые следят за правильным и здоровым питанием</p>
+      </section>
+
+      <section class="tasks">
+        <h2 class="content__title">Наши задачи</h2>
+        <p class="tasks__text">Реализация проекта поможет решить ряд проблем:</p>
+        <ol class="tasks__list">
+          <li class="tasks__item">
+            <p class="tasks__problem"><span class="tasks__name">Проблема:</span>отсутствие полноценной информации о блюдах в меню заведений общественного питания</p>
+            <p class="tasks__decision"><span class="tasks__name">Решение:</span>профессиональная медицинская оценка состава блюд в меню общепита, оформление альтернативы.</p>
+          </li>
+          <li class="tasks__item">
+            <p class="tasks__problem"><span class="tasks__name">Проблема:</span>низкая осведомленость диабетиков о важности подсчета ХЕ (хлебных единиц)</p>
+            <p class="tasks__decision"><span class="tasks__name">Решение:</span>создание информационного вкладыша в меню, разработанного Институтом эндокринологии.</p>
+          </li>
+          <li class="tasks__item">
+            <p class="tasks__problem"><span class="tasks__name">Проблема:</span>недостаточная информированность населения о такой проблеме как диабет</p>
+            <p class="tasks__decision"><span class="tasks__name">Решение:</span>создание информационного повода для того, чтобы население задумалось о существовании такого заболевания как сахарный диабет и способах его приобретения.</p>
+          </li>
+        </ol>
+      </section>
+
+      <section class="partner">
+        <h2 class="partner__title">Наши партнеры</h2>
+        <!-- Slider1 container -->
+        <div class="swiper1-container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide swiper-slide--slide1">Slide 1</div>
+            <div class="swiper-slide swiper-slide--slide2">Slide 2</div>
+            <div class="swiper-slide swiper-slide--slide3">Slide 3</div>
+            <div class="swiper-slide swiper-slide--slide4">Slide 4</div>
+          </div>
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </section>
+
+      <section class="ideas">
+        <h2 class="ideas__title">Идеи потребителей</h2>
+        <!-- Slider2 container -->
+        <div class="swiper2-container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide swiper-slide--text">
+              <h3 class="ideas__author">Марина Павлова</h3>
+              <p class="ideas__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in </p>
+              <h3 class="ideas__author">Дмитрий</h3>
+              <p class="ideas__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium </p>
+              <h3 class="ideas__author">Андрей Иванов</h3>
+              <p class="ideas__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in </p>
+            </div>
+          </div>
+          <!-- Add Scroll Bar -->
+          <div class="swiper-scrollbar"></div>
+        </div>
+        <a href="" class="ideas__link">Написать нам</a>
+      </section>
+
+      <section class="team">
+        <h2 class="team__title">Наша команда</h2>
+        <!-- Slider3 container -->
+        <div class="swiper3-container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide swiper-slide--member1">Полина Пикус</div>
+            <div class="swiper-slide swiper-slide--member2">Дмитрий Пикус</div>
+            <div class="swiper-slide swiper-slide--member3">Елена Микитюк</div>
+            <div class="swiper-slide swiper-slide--member4">Саша Коцюба</div>
+            <div class="swiper-slide swiper-slide--member5">Николай Вершинин</div>
+          </div>
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </section>
+
+      <section class="stat">
+        <h2 class="visually-hidden">Статистика</h2>
+        <ul class="stat__list">
+          <li class="stat__item">
+            <span class="stat__value">3890</span>
+            <span class="stat__description">людей, которые продвигают наши идеи</span>
+          </li>
+          <li class="stat__item">
+            <span class="stat__value">285</span>
+            <span class="stat__description">подсчитаных карт блюд</span>
+          </li>
+          <li class="stat__item">
+            <span class="stat__value">28</span>
+            <span class="stat__description">заведений, желающих с нами сотрудничать</span>
+          </li>
+          <li class="stat__item">
+            <span class="stat__value">18</span>
+            <span class="stat__description">заведений, которые уже с нами</span>
+          </li>
+        </ul>
+      </section>
+
+      <section class="result">
+        <h2 class="result__title">Результаты работы</h2>
+        <!-- Slider4 container -->
+        <div class="swiper4-container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide swiper-slide--restaurant">
+              <h3 class="result__name">Meat restaurant</h3>
+              <p class="result__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+              <a href="" class="result__link">Перейти на сайт</a>
+            </div>
+          </div>
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </section>
+
+      <section class="letter">
+        <h2 class="letter__title">Свяжитесь с нами</h2>
+        <form class="letter__form">
+          <input class="letter__input" type="text" id="name" name="name" placeholder="ФИО" required>
+          <label for="name" class="letter__label">ФИО</label>
+          <input class="letter__input" type="email" id="email" name="email" placeholder="Email" required>
+          <label for="email" class="letter__label">Email</label>
+          <input class="letter__input" type="text" id="phone" placeholder="Телефон" name="phone">
+          <label for="phone" class="letter__label">Телефон</label>
+          <textarea class="letter__textarea" id="message" name="message" placeholder="Текст сообщения"></textarea>
+          <label for="message" class="letter__label">Текст сообщения</label>
+          <button type="submit" class="letter__btn">Отправить</button>
+        </form>
+      </section>
+
+      <section class="contacts">
+        <p class="contacts__address">г. КИЕВ, УЛИЦА ХРЕЩАТИК, 1</p>
+        <p class="contacts__phone"><a href="tel:+38-(097)-88-88-888">
+<!--            <svg class="contacts__icon" width="30px" height="30" aria-label="Phone">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#phone"></use>
+            </svg> -->
+            +38-(097)-88-88-888</a></p>
+        <p class="contacts__email"><a  href="mailto:polinapicus@gmail.com.ua">
+<!--            <svg class="calltoaction__icon" width="30px" height="30" aria-label="Email">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#email"></use>
+            </svg> -->
+            polinapicus@gmail.com.ua</a></p>
+        <p class="contacts__social"><a href="">
+<!--            <svg class="contacts__icon" width="30px" height="40" aria-label="fb">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#fb"></use>
+           </svg> -->
+           Наша страница в Facebook</a></p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__copyright">Copyright @ 2018 - Все права защищены</div>
+      <div class="footer__creator">Design by Elena Mykytyuk    Developed by Olga Duka</div>
+    </footer>
+    <script src="js/swiper.min.js"></script>
+    <script>
+      var swiper1 = new Swiper('.swiper1-container', {
+        slidesPerView: 4,
+        spaceBetween: 60,
+        slidesPerGroup: 1,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+      var swiper2 = new Swiper('.swiper2-container', {
+        direction: 'vertical',
+        slidesPerView: 'auto',
+        freeMode: true,
+        scrollbar: {
+          el: '.swiper-scrollbar',
+        },
+        mousewheel: true,
+      });
+      var swiper3 = new Swiper('.swiper3-container', {
+        slidesPerView: 3,
+        spaceBetween: 60,
+        slidesPerGroup: 1,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+      var swiper4 = new Swiper('.swiper4-container', {
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    </script>
+  </body>
+</html>
