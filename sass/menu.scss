@@ -1,0 +1,28 @@
+
+.menu {
+  min-height: 50px;
+  background-color: transparent;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-item {
+  margin: 0 11px;
+  font-size: 24px;
+  line-height: 60px;
+  font-weight: 400;
+}
+
+.menu-item a {
+  color: $light-color;
+
+  &:hover {
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}

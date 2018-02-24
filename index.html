@@ -5,8 +5,8 @@
     <title>Food&Diabetes</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/swiper.css">
     <link rel="stylesheet" href="css/style.min.css">
-    <link rel="stylesheet" href="css/swiper.min.css">
 
     <!-- Pixel Glass -->
     <style>
@@ -38,19 +38,19 @@
           <span class="header__icon"></span>
         </button>
         <div class="header__logo"></div>
+        <nav class="header__menu">
+          <ul class="menu">
+            <li class="menu-item"><a href="">Задачи</a></li>
+            <li class="menu-item"><a href="">Партнеры</a></li>
+            <li class="menu-item"><a href="">Идеи</a></li>
+            <li class="menu-item"><a href="">Команда</a></li>
+            <li class="menu-item"><a href="">Результаты</a></li>
+            <li class="menu-item"><a href="">Контакты</a></li>
+          </ul>
+        </nav>
       </div>
-      <nav class="header__menu">
-        <ul class="menu">
-          <li class="menu-item"><a href="">Задачи</a></li>
-          <li class="menu-item"><a href="">Партнеры</a></li>
-          <li class="menu-item"><a href="">Идеи</a></li>
-          <li class="menu-item"><a href="">Команда</a></li>
-          <li class="menu-item"><a href="">Результаты</a></li>
-          <li class="menu-item"><a href="">Контакты</a></li>
-        </ul>
-      </nav>
       <h1 class="header__title">Food & diabetes</h1>
-      <p class="header__intro">Реализация социального проекта ХЕ-меню поможет решить ряд проблем и упростит жизнь людям страдающим сахарным диабетом (и не только)</p>
+      <p class="header__intro">Реализация социального проекта ХЕ-меню поможет решить ряд&nbsp;проблем и упростит жизнь людям страдающим сахарным диабетом (и не только)</p>
     </header>
 
     <main class="content">
@@ -61,68 +61,79 @@
       </section>
 
       <section class="tasks">
-        <h2 class="content__title">Наши задачи</h2>
-        <p class="tasks__text">Реализация проекта поможет решить ряд проблем:</p>
-        <ol class="tasks__list">
-          <li class="tasks__item">
-            <p class="tasks__problem"><span class="tasks__name">Проблема:</span>отсутствие полноценной информации о блюдах в меню заведений общественного питания</p>
-            <p class="tasks__decision"><span class="tasks__name">Решение:</span>профессиональная медицинская оценка состава блюд в меню общепита, оформление альтернативы.</p>
-          </li>
-          <li class="tasks__item">
-            <p class="tasks__problem"><span class="tasks__name">Проблема:</span>низкая осведомленость диабетиков о важности подсчета ХЕ (хлебных единиц)</p>
-            <p class="tasks__decision"><span class="tasks__name">Решение:</span>создание информационного вкладыша в меню, разработанного Институтом эндокринологии.</p>
-          </li>
-          <li class="tasks__item">
-            <p class="tasks__problem"><span class="tasks__name">Проблема:</span>недостаточная информированность населения о такой проблеме как диабет</p>
-            <p class="tasks__decision"><span class="tasks__name">Решение:</span>создание информационного повода для того, чтобы население задумалось о существовании такого заболевания как сахарный диабет и способах его приобретения.</p>
-          </li>
-        </ol>
+        <div class="tasks__container">
+          <h2 class="tasks__title">Наши задачи</h2>
+          <p class="tasks__intro">Реализация проекта поможет решить ряд проблем:</p>
+          <ol class="tasks__list">
+            <li class="tasks__item">
+              <div class="tasks__problem">
+                <p class="tasks__text"><span class="tasks__name">Проблема:</span>отсутствие полноценной информации о блюдах в меню заведений общественного питания</p>
+                <p class="tasks__text tasks__text--bottom"><span class="tasks__name">Решение:</span>профессиональная медицинская оценка состава блюд в меню общепита, оформление альтернативы.</p>
+              </div>
+            </li>
+            <li class="tasks__item">
+              <div class="tasks__problem">
+                <p class="tasks__text"><span class="tasks__name">Проблема:</span>низкая осведомленость диабетиков о важности подсчета ХЕ (хлебных единиц)</p>
+                <p class="tasks__text"><span class="tasks__name">Решение:</span>создание информационного вкладыша в меню, разработанного Институтом эндокринологии.</p>
+              </div>
+            </li>
+            <li class="tasks__item">
+              <div class="tasks__problem">
+                <p class="tasks__text"><span class="tasks__name">Проблема:</span>недостаточная информированность населения о такой проблеме как диабет</p>
+                <p class="tasks__text"><span class="tasks__name">Решение:</span>создание информационного повода для того, чтобы население задумалось о существовании такого заболевания как сахарный диабет и способах его приобретения.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
       </section>
 
       <section class="partner">
         <h2 class="partner__title">Наши партнеры</h2>
         <!-- Slider1 container -->
-        <div class="swiper1-container">
+        <div class="swiper-container swiper-container--1">
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
             <!-- Slides -->
-            <div class="swiper-slide swiper-slide--slide1">Slide 1</div>
-            <div class="swiper-slide swiper-slide--slide2">Slide 2</div>
-            <div class="swiper-slide swiper-slide--slide3">Slide 3</div>
-            <div class="swiper-slide swiper-slide--slide4">Slide 4</div>
+            <div class="swiper-slide swiper-slide--slide1"></div>
+            <div class="swiper-slide swiper-slide--slide2"></div>
+            <div class="swiper-slide swiper-slide--slide3"></div>
+            <div class="swiper-slide swiper-slide--slide4"></div>
           </div>
           <!-- If we need navigation buttons -->
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev swiper-button-prev--1"></div>
+          <div class="swiper-button-next swiper-button-next--1"></div>
         </div>
       </section>
 
       <section class="ideas">
-        <h2 class="ideas__title">Идеи потребителей</h2>
-        <!-- Slider2 container -->
-        <div class="swiper2-container">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide swiper-slide--text">
-              <h3 class="ideas__author">Марина Павлова</h3>
-              <p class="ideas__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in </p>
-              <h3 class="ideas__author">Дмитрий</h3>
-              <p class="ideas__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium </p>
-              <h3 class="ideas__author">Андрей Иванов</h3>
-              <p class="ideas__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in </p>
+        <div class="ideas__container">
+          <h2 class="ideas__title">Идеи потребителей</h2>
+          <!-- Slider2 container -->
+          <div class="swiper-container swiper-container--2">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide swiper-slide--text">
+                <h3 class="ideas__author">Марина Павлова</h3>
+                <p class="ideas__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in </p>
+                <h3 class="ideas__author">Дмитрий</h3>
+                <p class="ideas__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium </p>
+                <h3 class="ideas__author">Андрей Иванов</h3>
+                <p class="ideas__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in </p>
+              </div>
+
+              <!-- Add Scroll Bar -->
+              <div class="swiper-scrollbar"></div>
             </div>
           </div>
-          <!-- Add Scroll Bar -->
-          <div class="swiper-scrollbar"></div>
+          <a href="" class="ideas__link">Написать нам</a>
         </div>
-        <a href="" class="ideas__link">Написать нам</a>
       </section>
 
       <section class="team">
         <h2 class="team__title">Наша команда</h2>
         <!-- Slider3 container -->
-        <div class="swiper3-container">
+        <div class="swiper-container swiper-container--3">
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
             <!-- Slides -->
@@ -163,7 +174,7 @@
       <section class="result">
         <h2 class="result__title">Результаты работы</h2>
         <!-- Slider4 container -->
-        <div class="swiper4-container">
+        <div class="swiper-container swiper-container--4">
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
             <!-- Slides -->
@@ -220,9 +231,9 @@
     </footer>
     <script src="js/swiper.min.js"></script>
     <script>
-      var swiper1 = new Swiper('.swiper1-container', {
+      var swiper1 = new Swiper('.swiper-container--1', {
         slidesPerView: 4,
-        spaceBetween: 60,
+        spaceBetween: 37,
         slidesPerGroup: 1,
         loop: true,
         loopFillGroupWithBlank: true,
@@ -231,7 +242,7 @@
           prevEl: '.swiper-button-prev',
         },
       });
-      var swiper2 = new Swiper('.swiper2-container', {
+      var swiper2 = new Swiper('.swiper-container--2', {
         direction: 'vertical',
         slidesPerView: 'auto',
         freeMode: true,
@@ -240,7 +251,7 @@
         },
         mousewheel: true,
       });
-      var swiper3 = new Swiper('.swiper3-container', {
+      var swiper3 = new Swiper('.swiper-container--3', {
         slidesPerView: 3,
         spaceBetween: 60,
         slidesPerGroup: 1,
@@ -251,7 +262,7 @@
           prevEl: '.swiper-button-prev',
         },
       });
-      var swiper4 = new Swiper('.swiper4-container', {
+      var swiper4 = new Swiper('.swiper-container--4', {
         navigation: {
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',

@@ -1,0 +1,96 @@
+.tasks {
+  width: 100%;
+  min-height: 1023px;
+  margin-top: -125px;
+  background-image: url('../images/bg_content1.jpg');
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: top;
+}
+
+.tasks__container {
+  width: $panel-width;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  padding-top: 240px;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+  }
+}
+
+.tasks__title {
+  margin-bottom: 0;
+  font-family: $title-font;
+  font-size: 48px;
+  line-height: 60px;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: left;
+}
+
+.tasks__intro,
+.tasks__text,
+.tasks__problem,
+.tasks__name {
+  margin: 0;
+  padding-left: 0;
+  font-family: $default-font;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+  text-align: left;
+}
+
+.tasks__intro {
+  line-height: 40px;
+  letter-spacing: 0.6px;
+}
+
+.tasks__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: $title-font;
+  font-size: 150px;
+  line-height: 150px;
+  color: rgba(255, 255, 255, 0.2);
+  list-style-type: none; /* Убираем исходные маркеры */
+  _list-style-type: decimal; /* Нумерация для браузера Internet Эксплорер */
+  counter-reset: item; /* Обнуляем счетчик списка */
+}
+
+.tasks__item {
+  display: flex;
+  align-items: center;
+
+  &::before {
+    width: 83px;
+    padding-top: 8px;
+    content: counter(item);
+    counter-increment: item; /* Задаем имя счетчика */
+  }
+}
+
+.tasks__problem {
+  padding-left: 17px;
+  max-width: 755px;
+}
+
+.tasks__text {
+  font-size: 18px;
+  margin-top: 15px;
+}
+
+.tasks__name {
+  font-weight: 700;
+  padding-right: 5px;
+}

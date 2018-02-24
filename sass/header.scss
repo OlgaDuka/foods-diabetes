@@ -1,0 +1,51 @@
+.header {
+  width: 100%;
+  min-height: 800px;
+  background-image: url('../images/bg_header.jpg');
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.header__panel {
+  width: $panel-width;
+  margin: 0 auto;
+  padding: 35px 15px;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+  }
+}
+
+.header__menu {
+  margin-left: auto;
+}
+
+.header__title {
+  margin-top: 78px;
+  font-family: $title-font;
+  font-size: 72px;
+  line-height: 60px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: $light-color;
+  text-align: center;
+}
+
+.header__intro {
+  width: 900px;
+  min-height: 202px;
+  margin: 0 auto;
+  color: $light-color;
+  font-family: $default-font;
+  font-size: 30px;
+  line-height: 45px;
+  letter-spacing: 0.8px;
+  text-align: center;
+}
