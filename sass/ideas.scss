@@ -1,5 +1,6 @@
 .ideas {
   width: 100%;
+  min-height: 1167px;
   margin-top: -81px;
   background-image: url('../images/bg_content2.jpg');
   background-repeat: no-repeat;
@@ -48,6 +49,7 @@
   text-align: right;
   background: transparent;
   display: flex;
+  flex-direction: column;
   align-items: flex-end;
   color: #ffffff;
 }
@@ -56,6 +58,7 @@
   margin: 20px 0 0;
   font-size: 24px;
   line-height: 40px;
+  font-weight: 700;
   letter-spacing: 0.6px;
 }
 
@@ -63,4 +66,30 @@
   margin: 0 0 20px;;
   font-size: 18px;
   line-height: 22px;
+  font-weight: 700;
+}
+
+.ideas__link {
+  margin: 23px 55px 0 auto;
+  margin-right: 55px;
+  display: block;
+  padding-top: 18px;
+  text-align: center;
+  width: 288px;
+  min-height: 70px;
+  font-size: 24px;
+  color: #ffffff;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  border: 2px solid #ffffff;
+  background-color: transparent;
+
+  &:hover {
+    color: #000000;
+    background-color: #ffffff;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
