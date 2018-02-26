@@ -282,42 +282,17 @@
     </footer>
     <script src="js/swiper.min.js"></script>
     <script>
-      var swiper1 = new Swiper('.swiper-container--1', {
-        slidesPerView: 4,
-        spaceBetween: 37,
-        slidesPerGroup: 1,
-        loop: true,
-        loopFillGroupWithBlank: true,
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-      });
+
       var swiper2 = new Swiper('.swiper-container--2', {
         direction: 'vertical',
         slidesPerView: 'auto',
         freeMode: true,
         scrollbar: {
           el: '.swiper-scrollbar',
+          draggable: true,
+          hide: false,
         },
         mousewheel: true,
-      });
-      var swiper3 = new Swiper('.swiper-container--3', {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        slidesPerGroup: 1,
-        loop: true,
-        loopFillGroupWithBlank: true,
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-      });
-      var swiper4 = new Swiper('.swiper-container--4', {
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
       });
     </script>
   </body>
