@@ -1,0 +1,45 @@
+.footer {
+  min-height: 30px;
+  background-color: $dark-color;
+}
+
+.footer__container {
+  width: $panel-width;
+  padding: 5px 15px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+  }
+}
+
+.footer__copyright,
+.footer__creator,
+.footer__link {
+  font-size: 14px;
+  color: $light-color;
+  margin-right: 20px;
+}
+
+.footer__copyright {
+  margin-right: auto;
+}
+
+.footer__link {
+  text-decoration: underline;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

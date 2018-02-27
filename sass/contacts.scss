@@ -14,6 +14,7 @@
   padding-right: 15px;
   margin: 0 auto;
   padding-top: 266px;
+  padding-bottom: 90px;
   display: flex;
   flex-direction: column;
 
@@ -31,8 +32,43 @@
   font-family: $title-font;
   font-size: 48px;
   line-height: 60px;
-  letter-spacing: 1.3px;
   text-transform: uppercase;
-  color: #ffffff;
+  color: $light-color;
   text-align: left;
+}
+
+.contacts__data {
+  margin: 20px 0 0;
+  font-size: 24px;
+  color: $light-color;
+  text-transform: uppercase;
+  font-weight: bold;
+
+  &--email {
+    text-transform: none;
+    margin-bottom: 65px;
+  }
+
+  &--social {
+    font-size: 30px;
+    text-transform: none;
+  }
+
+  a {
+    color: $light-color;
+
+    &:hover {
+      opacity: 0.6;
+      border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+    }
+
+    &:active {
+      opacity: 0.3;
+      border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    }
+  }
+}
+
+.contacts__icon {
+  margin-right: 20px;
 }

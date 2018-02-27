@@ -1,28 +1,40 @@
-
 .menu {
-  min-height: 50px;
+  margin: 0 auto;
   background-color: transparent;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+
+  @media (min-width: $desktop-width) {
+    min-height: 50px;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }
 
 .menu-item {
-  margin: 0 11px;
+  margin: 0 8px;
   font-size: 24px;
   line-height: 60px;
-  font-weight: 400;
+  letter-spacing: 0.5;
+  font-weight: 700;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
-.menu-item a {
+.menu__link {
   color: $light-color;
 
   &:hover {
     color: rgba(255, 255, 255, 0.6);
-  }
+    border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+    }
 
   &:active {
     color: rgba(255, 255, 255, 0.3);
+      border-bottom: 2px solid rgba(255, 255, 255, 0.3);
   }
 }

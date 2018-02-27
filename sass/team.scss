@@ -27,9 +27,8 @@
   font-family: $title-font;
   font-size: 48px;
   line-height: 60px;
-  letter-spacing: 1.3px;
   text-transform: uppercase;
-  color: #000000;
+  color: $darktext-color;
   text-align: center;
 }
 
@@ -37,22 +36,72 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  &:hover .team__social {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
 }
 
 .team__name {
   margin: 13px 0 0;
   font-size: 26px;
   font-weight: 700;
-  color: #000000;
+  color: $darktext-color;
 }
 
 .team__post {
   font-size: 18px;
   font-weight: 400;
-  color: #000000;
+  color: $darktext-color;
 }
 
 .swiper-button-prev--3,
 .swiper-button-next--3 {
+  width: 20px;
+  height: 35px;
   top: 40%;
+  background-repeat: no-repeat;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.swiper-button-next--3 {
+  right: 0;
+  background-image: url('../images/right-arrow.svg');
+
+}
+
+.swiper-button-prev--3 {
+  left: 0;
+  background-image: url('../images/left-arrow.svg');
+}
+
+team__photo {
+  display: block;
+  position: relative;
+  border-radius: 50%;
+}
+
+.team__social {
+  width: 263px;
+  height: 263px;
+  padding: 20px;
+  border-radius: 50%;
+  display: none;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 47px;
+}
+
+.social__link:hover {
+  opacity: 0.6;
+}
+
+.social__link:active {
+  opacity: 0.3;
 }

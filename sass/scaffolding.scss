@@ -48,38 +48,36 @@ ul {
   overflow: hidden;
 }
 
-//--------------------------------------------
-// Центровка
-//--------------------------------------------
-@mixin zero-centered {
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-}
-//--------------------------------------------
-// Стрелки с помощью треугольников
-//--------------------------------------------
-@mixin triangle($size, $color) {
-  width: 0;
-  height: 0;
-  border-width: $size;
-  border-style: solid;
-  border-color: $color;
-}
+.scroll__arrow-up {
+  width: 70px;
+  height: 70px;
+  background-color: transparent;
+  border: 5px solid red;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  outline: none;
 
-@mixin triangle-top($size, $color) {
-  @include triangle($size, $color);
-  border-right-color: transparent;
-  border-left-color: transparent;
-  border-top-style: none;
-}
+  &:hover {
+    opacity: 0.6;
+  }
 
-@mixin triangle-bottom($size, $color) {
-  @include triangle($size, $color);
-  border-left-color: transparent;
-  border-right-color: transparent;
-  border-bottom-style: none;
+  &:active {
+    opacity: 0.3;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    position: fixed;
+    bottom: 48px;
+    right: 52px;
+    width: 20px;
+    height: 20px;
+    border-top: 5px solid red;
+    border-left: 5px solid red;
+    border-radius: 3px;
+    transform: rotate(45deg);
+  }
 }

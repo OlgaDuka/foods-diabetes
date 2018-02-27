@@ -13,9 +13,8 @@
   font-family: $title-font;
   font-size: 48px;
   line-height: 48px;
-  letter-spacing: 1.3px;
   text-transform: uppercase;
-  color: #000000;
+  color: $darktext-color;
   text-align: center;
 }
 
@@ -34,8 +33,8 @@
   width: 585px;
   height: 467px;
   padding: 60px 100px;
-  background-color: #000000;
-  color: #ffffff;
+  background-color: $darktext-color;
+  color: $light-color;
 }
 
 .result__name {
@@ -55,7 +54,7 @@
 .result__link {
   font-size: 18px;
   font-weight: 300;
-  color: #ffffff;
+  color: $light-color;
   text-decoration: underline;
 
   &:hover {
@@ -66,4 +65,21 @@
   &:active {
     opacity: 0.6;
   }
+}
+
+.swiper-button-next--4,
+.swiper-button-prev--4 {
+  width: 20px;
+  height: 35px;
+  background-repeat: no-repeat;
+}
+
+.swiper-button-prev--4 {
+  left: 0;
+  background-image: url('../images/left-arrow-red.svg');
+}
+
+.swiper-button-next--4 {
+  right: 0;
+  background-image: url('../images/right-arrow-red.svg');
 }

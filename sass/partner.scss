@@ -9,19 +9,17 @@
   font-family: $title-font;
   font-size: 48px;
   line-height: 60px;
-  letter-spacing: 1.8px;
   text-transform: uppercase;
   color: $darktext-color;
   text-align: center;
 }
 
 .swiper-container--1 {
-    width: 1140px;
-    height: 100px;
-    padding-left: 40px;
-    padding-right: 40px;
-    background-color: #ffffff;
-
+  width: 1140px;
+  height: 100px;
+  padding-left: 40px;
+  padding-right: 40px;
+  background-color: #ffffff;
 }
 
 .swiper-slide {
@@ -56,11 +54,23 @@
   }
 }
 
+.swiper-button-next--1,
+.swiper-button-prev--1 {
+  width: 20px;
+  height: 35px;
+  background-repeat: no-repeat;
 
-.swiper-button-next--1 {
-  right: 0;
+    &:hover {
+      opacity: 0.5;
+    }
 }
 
 .swiper-button-prev--1 {
   left: 0;
+  background-image: url('../images/left-arrow.svg');
+}
+
+.swiper-button-next--1 {
+  right: 0;
+  background-image: url('../images/right-arrow.svg');
 }
