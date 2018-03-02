@@ -1,79 +1,154 @@
 .ideas {
   width: 100%;
-  min-height: 1167px;
-  margin-top: -81px;
+  margin-top: -35px;
   background-image: url('../images/bg_content2.jpg');
   background-repeat: no-repeat;
-  background-size: auto;
-  background-position: top;
+  background-size: cover;
+  background-position: top right;
 }
 
 .ideas__container {
   width: $panel-width;
+  height: 510px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  padding-top: 230px;
-
-  @media (min-width: $tablet-width) {
-    width: $tablet-width;
-  }
+  padding-top: 120px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
 
   @media (min-width: $desktop-width) {
     width: $desktop-width;
+    height: 585px;
+    padding-top: 222px;
   }
 }
 
 .ideas__title {
-  margin-bottom: 0;
-  margin-right: 65px;
-  margin-bottom: 20px;
+  margin: 0 auto;
   font-family: $title-font;
-  font-size: 48px;
-  line-height: 60px;
+  font-size: 24px;
+  line-height: 50px;
   text-transform: uppercase;
   color: $light-color;
-  text-align: right;
+  text-align: center;
+
+  @media (min-width: $desktop-width) {
+    font-size: 48px;
+    line-height: 60px;
+    margin-right: 65px;
+    margin-left: auto;
+  }
 }
 
 .scroll-pane {
-  width: 685px;
-  height: 580px;
-  margin-left: auto;
-  margin-right: 30px;
-  text-align: right;
-  background: transparent;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  color: $light-color;
-  overflow-y: scroll;
+  @media (min-width: $desktop-width) {
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: 30px;
+    width: 685px;
+    height: 580px;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background: transparent;
+    color: $light-color;
+    overflow-y: scroll;
+  }
 }
 
 .ideas__author {
   margin: 0 20px 0;
-  font-size: 24px;
-  line-height: 40px;
+  font-size: 12px;
+  line-height: 30px;
   font-weight: 700;
   letter-spacing: 0.6px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
+    line-height: 60px;
+  }
 }
 
 .ideas__text {
-  margin: 0 20px 40px 0;
-  font-size: 18px;
-  line-height: 22px;
+  margin: 0 20px 40px;
+  font-size: 12px;
+  line-height: 16px;
   font-weight: 700;
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+.ideas__slide {
+  display: none;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  color: $light-color;
+
+  &--active {
+    display: flex;
+  }
+
+  @media (min-width: $desktop-width) {
+    &--desktop {
+      display: flex;
+    }
+  }
+}
+
+.ideas__btn {
+  display: block;
+  position: absolute;
+  top: 250px;
+  border: none;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  width: 20px;
+  height: 35px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &--hidden {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.ideas__btn--prev {
+  left: 0;
+  background-image: url('../images/left-arrow-red.svg');
+}
+
+.ideas__btn--next {
+  right: 0;
+  background-image: url('../images/right-arrow-red.svg');
 }
 
 .ideas__link {
-  margin: 16px 55px 0 auto;
-  margin-right: 55px;
   display: block;
-  padding-top: 18px;
+  padding-top: 12px;
   text-align: center;
-  width: 288px;
-  min-height: 70px;
-  font-size: 24px;
+  width: 212px;
+  min-height: 50px;
+  font-size: 18px;
   color: $light-color;
   font-weight: 700;
   letter-spacing: 0.6px;

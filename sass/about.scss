@@ -1,28 +1,46 @@
 .about {
   width: 100%;
   min-height: 260px;
-  padding-top: 45px;
+  padding-top: 10px;
   background-color: #ffffff;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 45px;
+  }
 }
 
 .about__title {
   margin: 0 auto;
   font-family: $title-font;
-  font-size: 48px;
-  line-height: 60px;
+  font-size: 24px;
+  line-height: 36px;
   text-transform: uppercase;
   color: $darktext-color;
   text-align: center;
+
+  @media (min-width: $desktop-width) {
+    font-size: 48px;
+    line-height: 60px;
+  }
 }
 
 .about__text {
-  width: 945px;
-  min-height: 185px;
+  width: $panel-width;
+  padding-left: 15px;
+  padding-right: 15px;
   margin: 0 auto;
   color: $darktext-color;
   font-family: $default-font;
-  font-size: 16px;
-  line-height: 30px;
+  font-size: 12px;
+  line-height: 15px;
   letter-spacing: 0.3px;
   text-align: center;
+
+  @media (min-width: $desktop-width) {
+    width: 945px;
+    min-height: 185px;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.3px;
+  }
 }

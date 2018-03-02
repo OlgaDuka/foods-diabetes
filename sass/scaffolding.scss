@@ -58,6 +58,7 @@ ul {
   bottom: 30px;
   right: 30px;
   outline: none;
+  z-index: 100;
 
   &:hover {
     opacity: 0.6;

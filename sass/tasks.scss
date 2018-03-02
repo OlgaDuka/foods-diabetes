@@ -1,56 +1,76 @@
 .tasks {
   width: 100%;
-  min-height: 1023px;
-  margin-top: -125px;
+  margin-top: -80px;
+  min-height: 615px;
   background-image: url('../images/bg_content1.jpg');
   background-repeat: no-repeat;
-  background-size: auto;
-  background-position: top;
+  background-size: cover;
+  background-position: top left;
+
+  @media (min-width: $desktop-width) {
+    min-height: 1023px;
+    margin-top: -125px;
+    background-size: auto;
+  }
 }
 
 .tasks__container {
   width: $panel-width;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 23px;
+  padding-right: 23px;
   margin: 0 auto;
-  padding-top: 240px;
-
-  @media (min-width: $tablet-width) {
-    width: $tablet-width;
-  }
+  padding-top: 124px;
 
   @media (min-width: $desktop-width) {
     width: $desktop-width;
+    padding-top: 240px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
 .tasks__title {
   margin-bottom: 0;
   font-family: $title-font;
-  font-size: 48px;
-  line-height: 60px;
+  font-size: 24px;
+  line-height: 30px;
   text-transform: uppercase;
   color: $light-color;
-  text-align: left;
+  text-align: center;
+
+  @media (min-width: $desktop-width) {
+    font-size: 48px;
+    line-height: 60px;
+    text-align: left;
+  }
 }
 
 .tasks__intro,
 .tasks__text,
 .tasks__problem,
 .tasks__name {
-  margin: 0;
-  padding-left: 0;
   font-family: $default-font;
-  font-size: 24px;
-  line-height: 24px;
-  letter-spacing: 0.5px;
   color: $light-color;
   text-align: left;
+  margin: 0;
+  padding-left: 0;
 }
 
 .tasks__intro {
-  line-height: 40px;
-  letter-spacing: 0.6px;
+  margin: 0;
+  font-size: 14px;
+  line-height: 16px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    font-size: 24px;
+    line-height: 40px;
+    letter-spacing: 0.6px;
+    text-align: left;
+  }
 }
 
 .tasks__list {
@@ -59,12 +79,16 @@
   display: flex;
   flex-direction: column;
   font-family: $title-font;
-  font-size: 150px;
-  line-height: 150px;
+  font-size: 85px;
   color: rgba(255, 255, 255, 0.2);
   list-style-type: none; /* Убираем исходные маркеры */
   _list-style-type: decimal; /* Нумерация для браузера Internet Эксплорер */
   counter-reset: item; /* Обнуляем счетчик списка */
+
+  @media (min-width: $desktop-width) {
+    font-size: 150px;
+    line-height: 150px;
+  }
 }
 
 .tasks__item {
@@ -72,24 +96,44 @@
   align-items: center;
 
   &::before {
-    width: 83px;
+    width: 70px;
     padding-top: 8px;
     content: counter(item);
     counter-increment: item; /* Задаем имя счетчика */
+
+    @media (min-width: $desktop-width) {
+      width: 83px;
+    }
   }
 }
 
 .tasks__problem {
-  padding-left: 17px;
-  max-width: 755px;
+  padding-left: 7px;
+  max-width: $panel-width;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 17px;
+    max-width: 755px;
+  }
 }
 
 .tasks__text {
-  font-size: 18px;
-  margin-top: 15px;
+  font-size: 11px;
+  margin-top: 8px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 15px;
+  }
 }
 
 .tasks__name {
+  font-size: 13px;
   font-weight: 700;
   padding-right: 5px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
+  }
 }

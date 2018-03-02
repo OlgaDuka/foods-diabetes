@@ -1,16 +1,19 @@
 .team {
   width: 100%;
-  min-height: 500px;
+  min-height: 315px;
   margin: 0;
-  padding-top: 25px;
-  padding-bottom: 70px;
   background-color: #ffffff;
+
+  @media (min-width: $desktop-width) {
+    min-height: 500px;
+    padding-bottom: 70px;
+  }
 }
 
 .team__container {
   width: $panel-width;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
@@ -23,16 +26,24 @@
 }
 
 .team__title {
-  margin: 0 auto 50px;
+  margin: 0 auto;
   font-family: $title-font;
-  font-size: 48px;
-  line-height: 60px;
+  font-size: 24px;
+  line-height: 30px;
   text-transform: uppercase;
   color: $darktext-color;
   text-align: center;
+
+  @media (min-width: $desktop-width) {
+    font-size: 48px;
+    line-height: 60px;
+  }
 }
 
 .swiper-slide--member {
+  max-width: 194px;
+  margin-left: 43px;
+  margin-right: 43px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -45,15 +56,23 @@
 
 .team__name {
   margin: 13px 0 0;
-  font-size: 26px;
+  font-size: 18px;
   font-weight: 700;
   color: $darktext-color;
+
+  @media (min-width: $desktop-width) {
+    font-size: 26px;
+  }
 }
 
 .team__post {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   color: $darktext-color;
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+  }
 }
 
 .swiper-button-prev--3,

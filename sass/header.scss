@@ -1,10 +1,15 @@
 .header {
   padding-top: 12px;
   width: 100%;
-  min-height: 800px;
+  min-height: 280px;
   background-image: url('../images/bg_header.jpg');
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: cover;
+  background-position: left bottom;
+
+  @media (min-width: $desktop-width) {
+    min-height: 800px;
+  }
 }
 
 .header__top {
@@ -61,23 +66,49 @@
 }
 
 .header__title {
-  margin-top: 78px;
+  margin-top: 28px;
+  margin-bottom: 0;
   font-family: $title-font;
-  font-size: 72px;
-  line-height: 55px;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.8px;
   text-transform: uppercase;
   color: $light-color;
   text-align: center;
+
+  &--hidden {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 78px;
+    margin-bottom: auto;
+    font-size: 72px;
+    line-height: 55px;
+  }
 }
 
 .header__intro {
-  width: 920px;
-  min-height: 202px;
   margin: 0 auto;
+  width: $panel-width;
+  padding-left: 20px;
+  padding-right: 20px;
   color: $light-color;
   font-family: $default-font;
-  font-size: 30px;
-  line-height: 45px;
-  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
   text-align: center;
+
+  &--hidden {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 920px;
+    min-height: 202px;
+    font-size: 30px;
+    line-height: 45px;
+    font-weight: 700;
+  }
 }
