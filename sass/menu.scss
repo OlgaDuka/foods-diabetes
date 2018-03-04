@@ -11,9 +11,7 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
-    min-height: 50px;
     flex-direction: row;
-    justify-content: center;
     flex-wrap: wrap;
   }
 }
@@ -28,6 +26,8 @@
   @media (min-width: $desktop-width) {
     width: auto;
     margin: 0 8px;
+    line-height: 26px;
+    font-weight: 400;
 
     &:last-child {
       margin-right: 0;

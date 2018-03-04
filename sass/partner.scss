@@ -1,9 +1,15 @@
 .partner {
   background-color: #ffffff;
+  padding-bottom: 22px;
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 60px;
+  }
 }
 
 .partner__title {
   margin: 0 auto;
+  padding-top: 35px;
   padding-bottom: 0;
   font-family: $title-font;
   font-size: 24px;
@@ -15,8 +21,8 @@
   @media (min-width: $desktop-width) {
     font-size: 48px;
     line-height: 60px;
-    padding-top: 15px;
-    padding-bottom: 23px;
+    padding-top: 60px;
+    padding-bottom: 25px;
   }
 }
 

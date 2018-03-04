@@ -21,6 +21,8 @@
 
   @media (min-width: $desktop-width) {
     width: $desktop-width;
+    flex-direction: row;
+    align-items: flex-end;
   }
 }
 
@@ -38,7 +40,7 @@
 
   @media (min-width: $desktop-width) {
     width: 300px;
-    height: 60px;
+    height: 65px;
     align-items: flex-end;
 
     .header__toggle {
@@ -81,8 +83,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 78px;
-    margin-bottom: auto;
+    margin-top: 133px;
+    margin-bottom: 50px;
     font-size: 72px;
     line-height: 55px;
   }
@@ -105,7 +107,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 920px;
+    width: 960px;
     min-height: 202px;
     font-size: 30px;
     line-height: 45px;

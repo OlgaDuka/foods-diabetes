@@ -1,15 +1,14 @@
 .tasks {
   width: 100%;
-  margin-top: -80px;
-  min-height: 615px;
+  margin-top: 0;
+  min-height: 508px;
   background-image: url('../images/bg_content1.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top left;
 
   @media (min-width: $desktop-width) {
-    min-height: 1023px;
-    margin-top: -125px;
+    min-height: 850px;
     background-size: auto;
   }
 }
@@ -19,11 +18,11 @@
   padding-left: 23px;
   padding-right: 23px;
   margin: 0 auto;
-  padding-top: 124px;
+  padding-top: 45px;
 
   @media (min-width: $desktop-width) {
     width: $desktop-width;
-    padding-top: 240px;
+    padding-top: 115px;
     padding-left: 15px;
     padding-right: 15px;
   }

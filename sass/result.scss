@@ -56,6 +56,11 @@
   width: 290px;
   height: 235px;
   align-self: center;
+
+  @media (min-width: $desktop-width) {
+    width: 585px;
+    height: 467px;
+  }
 }
 
 .result__description {
@@ -69,6 +74,8 @@
     width: 585px;
     height: 467px;
     padding: 60px 100px;
+    background-color: #000000;
+    color: $light-color;
   }
 }
 
@@ -92,9 +99,11 @@
   text-align: center;
 
   @media (min-width: $desktop-width) {
+    max-height: 268px;
     font-size: 18px;
     margin: 12px 0 24px;
     text-align: left;
+    overflow-y: hidden;
   }
 }
 
@@ -119,6 +128,7 @@
   @media (min-width: $desktop-width) {
     font-weight: 300;
     color: $light-color;
+    text-align: left;
   }
 }
 

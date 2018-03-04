@@ -5,8 +5,6 @@
     <title>Food&Diabetes</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
-    <!-- styles needed by jScrollPane -->
-    <link type="text/css" href="css/jquery.jscrollpane.css" rel="stylesheet" media="all" />
     <!-- latest slim jQuery  -->
     <script type="text/javascript" src="js/jquery.slim.min.js"></script>
     <!-- the mousewheel plugin - optional to provide mousewheel support -->
@@ -388,6 +386,9 @@
         </div>
       </section>
 
+    </main>
+
+    <footer class="footer">
       <section class="contacts" id="contacts">
         <div class="contacts__container">
           <h2 class="contacts__title">Свяжитесь с нами</h2>
@@ -429,16 +430,12 @@
             </a>
           </p>
         </div>
+        <div class="footer__container">
+          <div class="footer__copyright">© 2018 - Все права защищены</div>
+          <div class="footer__creator">Design by Elena Mykytyuk</div>
+          <div class="footer__creator">Developed by <a class="footer__link" href="https://olgaduka.github.io/MyPortfolio/">Olga Duka</a></div>
+        </div>
       </section>
-
-    </main>
-
-    <footer class="footer">
-      <div class="footer__container">
-        <div class="footer__copyright">© 2018 - Все права защищены</div>
-        <div class="footer__creator">Design by Elena Mykytyuk</div>
-        <div class="footer__creator">Developed by <a class="footer__link" href="https://olgaduka.github.io/MyPortfolio/">Olga Duka</a></div>
-      </div>
     </footer>
 
     <!-- Scroll to top -->
@@ -484,7 +481,11 @@
       $(function() {
 	      $('.scroll-pane').jScrollPane({
           showArrows: false,
-          verticalGutter: 20
+          enableKeyboardNavigation: false,
+          hideFocus: true,
+          verticalDragMinHeight: 90,
+          verticalDragMaxHeight: 90,
+          autoReinitialise: true
         });
       });
     </script>

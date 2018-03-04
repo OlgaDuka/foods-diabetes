@@ -6,6 +6,7 @@
 
   @media (min-width: $desktop-width) {
     min-height: 500px;
+    padding-top: 75px;
     padding-bottom: 70px;
   }
 }
@@ -21,7 +22,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: $desktop-width;
+    width: 1170px;
   }
 }
 
@@ -40,6 +41,11 @@
   }
 }
 
+.swiper-container--3 {
+  display: flex;
+  justify-content: space-between;
+}
+
 .swiper-slide--member {
   max-width: 194px;
   margin-left: 43px;
@@ -54,7 +60,12 @@
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 264px;
+    max-width: 392px;
+    padding-top: 30px;
+    padding-left: 65px;
+    padding-right: 65px;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
@@ -65,6 +76,7 @@
   color: $darktext-color;
 
   @media (min-width: $desktop-width) {
+    margin-top: 15px;
     font-size: 26px;
   }
 }
@@ -76,6 +88,7 @@
   color: $darktext-color;
 
   @media (min-width: $desktop-width) {
+    margin-top: 4px;
     font-size: 18px;
   }
 }
@@ -90,6 +103,10 @@
   &:hover {
     opacity: 0.5;
   }
+
+  @media (min-width: $desktop-width) {
+    top: 47.5%
+  }
 }
 
 .swiper-button-next--3 {
@@ -103,7 +120,7 @@
   background-image: url('../images/left-arrow.svg');
 }
 
-team__photo {
+.team__photo {
   display: block;
   position: relative;
   border-radius: 50%;
@@ -122,9 +139,11 @@ team__photo {
   left: 0;
 
   @media (min-width: $desktop-width) {
-    width: 264px;
-    height: 264px;
+    width: 262px;
+    height: 262px;
     padding: 20px;
+    top: 30px;
+    left: 65px;
   }
 }
 

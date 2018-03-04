@@ -8,8 +8,8 @@
   background-position: top;
 
   @media (min-width: $desktop-width) {
-    min-height: 1223px;
-    margin-top: -153px;
+    min-height: 1200px;
+    margin-top: 0;
   }
 }
 
@@ -29,7 +29,7 @@
 
   @media (min-width: $desktop-width) {
     width: $desktop-width;
-    padding-top: 266px;
+    padding-top: 113px;
     padding-bottom: 90px;
   }
 }
@@ -88,7 +88,7 @@
     font-weight: 700;
 
     &--email {
-      margin-bottom: 65px;
+      margin-bottom: 60px;
     }
 
     &--social {
