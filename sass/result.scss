@@ -2,60 +2,110 @@
   width: 100%;
   min-height: 670px;
   margin: 0;
-  padding-top: 25px;
+  padding-top: 18px;
   padding-bottom: 70px;
   background-color: #ffffff;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 25px;
+  }
 }
 
 .result__title {
-  margin: 0 auto 50px;
-  padding-top: 75px;
+  margin: 0 auto;
+  padding-top: 0;
   font-family: $title-font;
-  font-size: 48px;
-  line-height: 48px;
+  font-size: 24px;
+  line-height: 60px;
   text-transform: uppercase;
   color: $darktext-color;
   text-align: center;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 50px;
+    padding-top: 75px;
+    font-size: 48px;
+    line-height: 48px;
+  }
 }
 
 .swiper-container--4 {
   margin: 0 auto;
-  width: 1170px;
-  height: 467px;
+  width: 100%;
+  min-height: 467px;
+
+  @media (min-width: $desktop-width) {
+    width: 1170px;
+  }
 }
 
 .swiper-slide--restaurant {
+  margin-left: 0;
+  margin-right: auto;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-start;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.result__photo {
+  width: 290px;
+  height: 235px;
+  align-self: center;
 }
 
 .result__description {
-  width: 585px;
-  height: 467px;
-  padding: 60px 100px;
-  background-color: $darktext-color;
-  color: $light-color;
+  width: 290px;
+  min-height: 235px;
+  align-self: center;
+  background-color: #ffffff;
+  color: $darktext-color;
+
+  @media (min-width: $desktop-width) {
+    width: 585px;
+    height: 467px;
+    padding: 60px 100px;
+  }
 }
 
 .result__name {
-  margin: 0;
-  font-size: 36px;
+  margin: 13px 0 0;
+  font-size: 24px;
   font-family: $title-font;
+  text-align: center;
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    font-size: 36px;
+  }
 }
 
 .result__text {
-  margin: 12px 0 24px;
   padding: 0;
-  font-size: 18px;
+  margin: 0;
+  font-size: 12px;
   font-weight: 400;
-  text-align: left;
+  text-align: center;
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    margin: 12px 0 24px;
+    text-align: left;
+  }
 }
 
 .result__link {
+  display: block;
+  padding-top: 10px;
   font-size: 18px;
-  font-weight: 300;
-  color: $light-color;
+  font-weight: 700;
+  color: $darktext-color;
   text-decoration: underline;
+  text-align: center;
 
   &:hover {
     text-decoration: none;
@@ -65,21 +115,31 @@
   &:active {
     opacity: 0.6;
   }
+
+  @media (min-width: $desktop-width) {
+    font-weight: 300;
+    color: $light-color;
+  }
 }
 
 .swiper-button-next--4,
 .swiper-button-prev--4 {
   width: 20px;
   height: 35px;
+  top: 25%;
   background-repeat: no-repeat;
+
+  @media (min-width: $desktop-width) {
+    top: 50%;
+  }
 }
 
 .swiper-button-prev--4 {
-  left: 0;
+  left: 15px;
   background-image: url('../images/left-arrow-red.svg');
 }
 
 .swiper-button-next--4 {
-  right: 0;
+  right: 15px;
   background-image: url('../images/right-arrow-red.svg');
 }

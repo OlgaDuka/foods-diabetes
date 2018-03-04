@@ -1,6 +1,6 @@
 .team {
   width: 100%;
-  min-height: 315px;
+  min-height: 319px;
   margin: 0;
   background-color: #ffffff;
 
@@ -26,7 +26,7 @@
 }
 
 .team__title {
-  margin: 0 auto;
+  margin: 0 auto 15px;
   font-family: $title-font;
   font-size: 24px;
   line-height: 30px;
@@ -52,10 +52,14 @@
     display: flex;
     background-color: rgba(0, 0, 0, 0.6);
   }
+
+  @media (min-width: $desktop-width) {
+    max-width: 264px;
+  }
 }
 
 .team__name {
-  margin: 13px 0 0;
+  margin: 10px 0 0;
   font-size: 18px;
   font-weight: 700;
   color: $darktext-color;
@@ -67,6 +71,7 @@
 
 .team__post {
   font-size: 16px;
+  line-height: 18px;
   font-weight: 400;
   color: $darktext-color;
 
@@ -105,16 +110,22 @@ team__photo {
 }
 
 .team__social {
-  width: 263px;
-  height: 263px;
-  padding: 20px;
+  width: 194px;
+  height: 194px;
+  padding: 10px;
   border-radius: 50%;
   display: none;
   justify-content: space-around;
   align-items: center;
   position: absolute;
   top: 0;
-  left: 47px;
+  left: 0;
+
+  @media (min-width: $desktop-width) {
+    width: 264px;
+    height: 264px;
+    padding: 20px;
+  }
 }
 
 .social__link:hover {

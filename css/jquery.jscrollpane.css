@@ -20,7 +20,7 @@
   right: 0;
   width: 10px;
   height: 100%;
-  background: #000;
+  background: transparent;
 }
 
 .jspHorizontalBar {
@@ -41,16 +41,17 @@
 }
 
 .jspTrack {
-  background: #000;
+  background: red;
   position: relative;
   width: 4px;
+  border-radius: 2px;
 }
 
 .jspDrag {
   background: #fff;
   position: relative;
   top: 0;
-  left: 0;
+  left: -3px;
   width: 10px;
   border-radius: 5px;
   cursor: pointer;
