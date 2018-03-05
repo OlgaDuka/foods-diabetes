@@ -9,7 +9,7 @@
 
 .partner__title {
   margin: 0 auto;
-  padding-top: 35px;
+  padding-top: 25px;
   padding-bottom: 0;
   font-family: $title-font;
   font-size: 24px;
@@ -17,6 +17,11 @@
   text-transform: uppercase;
   color: $darktext-color;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 48px;
+  }
 
   @media (min-width: $desktop-width) {
     font-size: 48px;

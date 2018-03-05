@@ -19,6 +19,10 @@
   flex-direction: column;
   justify-content: space-between;
 
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+  }
+
   @media (min-width: $desktop-width) {
     width: $desktop-width;
     flex-direction: row;
@@ -32,20 +36,16 @@
   display: flex;
   justify-content: space-between;
 
-  .header__toggle {
-    width: 25px;
-    height: 25px;
-    background-color: #ffffff;
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
   @media (min-width: $desktop-width) {
     width: 300px;
     height: 65px;
     align-items: flex-end;
-
-    .header__toggle {
-      display: none;
-    }
   }
 }
 
@@ -57,6 +57,26 @@
   @media (min-width: $desktop-width) {
     width: 263px;
     height: 58px;
+  }
+}
+
+.header__toggle {
+  width: 25px;
+  height: 25px;
+  border-color: transparent;
+  background-color: transparent;
+  background-image: url('../images/menu-close.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  outline: none;
+
+  &--cross {
+    background-image: url('../images/menu-cross.svg');
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
   }
 }
 
@@ -82,6 +102,11 @@
     display: none;
   }
 
+  @media (min-width: $tablet-width) {
+    font-size: 48px;
+    line-height: 48px;
+  }
+
   @media (min-width: $desktop-width) {
     margin-top: 133px;
     margin-bottom: 50px;
@@ -104,6 +129,12 @@
 
   &--hidden {
     display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 600px;
+    font-size: 18px;
+    line-height: 24px;
   }
 
   @media (min-width: $desktop-width) {

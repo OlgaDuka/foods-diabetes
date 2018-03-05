@@ -18,6 +18,11 @@
   color: $darktext-color;
   text-align: center;
 
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 48px;
+  }
+
   @media (min-width: $desktop-width) {
     font-size: 48px;
     line-height: 60px;
@@ -35,6 +40,12 @@
   line-height: 15px;
   letter-spacing: 0.3px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 600px;
+    font-size: 14px;
+    line-height: 20px;
+  }
 
   @media (min-width: $desktop-width) {
     width: 945px;

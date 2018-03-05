@@ -7,8 +7,13 @@
   background-size: cover;
   background-position: top left;
 
+  @media (min-width: $tablet-width) {
+    background-position: top center;
+  }
+
   @media (min-width: $desktop-width) {
     min-height: 850px;
+    background-position: top left;
     background-size: auto;
   }
 }
@@ -20,8 +25,14 @@
   margin: 0 auto;
   padding-top: 45px;
 
+  @media (min-width: $tablet-width) {
+    width: 600px;
+    margin: 0 auto 0 40px;
+  }
+
   @media (min-width: $desktop-width) {
     width: $desktop-width;
+    margin: 0 auto;
     padding-top: 115px;
     padding-left: 15px;
     padding-right: 15px;
@@ -37,10 +48,17 @@
   color: $light-color;
   text-align: center;
 
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 40px;
+    text-align: left;
+    margin-left: 80px;
+  }
+
   @media (min-width: $desktop-width) {
     font-size: 48px;
     line-height: 60px;
-    text-align: left;
+    margin-left: 0;
   }
 }
 
@@ -63,12 +81,17 @@
   padding-right: 15px;
   text-align: center;
 
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 20px;
+    text-align: left;
+  }
+
   @media (min-width: $desktop-width) {
     padding-left: 0;
     font-size: 24px;
     line-height: 40px;
     letter-spacing: 0.6px;
-    text-align: left;
   }
 }
 
@@ -119,6 +142,11 @@
 .tasks__text {
   font-size: 11px;
   margin-top: 8px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 13px;
+    line-height: 14px;
+  }
 
   @media (min-width: $desktop-width) {
     font-size: 18px;

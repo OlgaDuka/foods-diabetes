@@ -1,7 +1,7 @@
 .contacts {
   width: 100%;
   min-height: 650px;
-  margin-top: -230px;
+  margin-top: 0;
   background-image: url('../images/bg_footer.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -9,28 +9,24 @@
 
   @media (min-width: $desktop-width) {
     min-height: 1200px;
-    margin-top: 0;
   }
 }
 
 .contacts__container {
   width: $panel-width;
-  padding-left: 15px;
-  padding-right: 15px;
   margin: 0 auto;
-  padding-top: 223px;
-  padding-bottom: 40px;
+  padding: 62px 15px 40px;
   display: flex;
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
     width: $tablet-width;
+    padding: 70px 40px 70px;
   }
 
   @media (min-width: $desktop-width) {
     width: $desktop-width;
-    padding-top: 113px;
-    padding-bottom: 90px;
+    padding: 113px 15px 90px;
   }
 }
 
@@ -44,10 +40,15 @@
   color: $light-color;
   text-align: center;
 
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 40px;
+    text-align: left;
+  }
+
   @media (min-width: $desktop-width) {
     font-size: 48px;
     line-height: 60px;
-    text-align: left;
   }
 }
 
@@ -101,6 +102,11 @@
   margin-right: 20px;
   width: 16px;
   height: 16px;
+
+  @media (min-width: $tablet-width) {
+    width: 20px;
+    height: 20px;
+  }
 
   @media (min-width: $desktop-width) {
     width: 26px;
