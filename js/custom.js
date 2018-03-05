@@ -1,4 +1,5 @@
 'use strict';
+
 (function () {
   // ----------------------------------------------
   // Меню
@@ -58,5 +59,4 @@
   // Установка обработчиков событий для слайдера
   sliderBtns[0].addEventListener('click', onClickButtonBack);
   sliderBtns[1].addEventListener('click', onClickButtonForward);
-
 })();

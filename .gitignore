@@ -10,7 +10,7 @@ images/sprite.svg
 img
 *.sublime*
 node_modules/
-zalman-group/
 npm-debug.*
 maket/*.*
+maket
 Thumbs.db

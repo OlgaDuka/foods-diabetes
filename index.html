@@ -5,14 +5,13 @@
     <title>Food&Diabetes</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
-    <!-- latest slim jQuery  -->
-    <script type="text/javascript" src="js/jquery.slim.min.js"></script>
-    <!-- the mousewheel plugin - optional to provide mousewheel support -->
-    <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
-    <!-- the jScrollPane script -->
-    <script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
     <link rel="stylesheet" href="css/swiper.css">
     <link rel="stylesheet" href="css/style.min.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+    <script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+    <script type="text/javascript" src="js/myfirst.js"></script>
 
     <!-- Pixel Glass -->
     <style>
@@ -46,7 +45,7 @@
           <button class="header__toggle" type="button"></button>
         </div>
         <nav class="header__menu">
-          <ul class="menu">
+          <ul class="menu" id="menu">
             <li class="menu-item"><a class="menu__link" href="#tasks">Задачи</a></li>
             <li class="menu-item"><a class="menu__link" href="#partner">Партнеры</a></li>
             <li class="menu-item"><a class="menu__link" href="#ideas">Идеи</a></li>
@@ -440,55 +439,10 @@
 
     <!-- Scroll to top -->
     <div class="scroll scroll--up">
-      <a class="scroll__up" href="#home">
+      <a class="scroll__up" id="scroll-up" href="#home">
         <span><i class="scroll__arrow-up"></i></span>
       </a>
     </div>  <!-- Scroll to top end-->
-
-    <script src="js/swiper.min.js"></script>
-    <script>
-    <!--Слайдер Партнеры -->
-      var swiper1 = new Swiper('.swiper-container--1', {
-        slidesPerView: 'auto',
-        spaceBetween: 0,
-        slidesPerGroup: 1,
-        loop: true,
-        loopFillGroupWithBlank: true,
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-      });
-      <!--Слайдер Наша команда -->
-      var swiper3 = new Swiper('.swiper-container--3', {
-        slidesPerView: 'auto',
-        spaceBetween: 0,
-        slidesPerGroup: 1,
-        loop: true,
-        loopFillGroupWithBlank: true,
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-      });
-      <!--Слайдер Результаты работы -->
-      var swiper4 = new Swiper('.swiper-container--4', {
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-      });
-      $(function() {
-	      $('.scroll-pane').jScrollPane({
-          showArrows: false,
-          enableKeyboardNavigation: false,
-          hideFocus: true,
-          verticalDragMinHeight: 90,
-          verticalDragMaxHeight: 90,
-          autoReinitialise: true
-        });
-      });
-    </script>
     <script src="js/custom.js"></script>
   </body>
 </html>

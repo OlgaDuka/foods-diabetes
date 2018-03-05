@@ -561,7 +561,8 @@ ul {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  outline: none; }
+  outline: none;
+  cursor: pointer; }
   .header__toggle--cross {
     background-image: url("../images/menu-cross.svg"); }
   @media (min-width: 1170px) {
@@ -592,6 +593,7 @@ ul {
       line-height: 48px; } }
   @media (min-width: 1170px) {
     .header__title {
+      display: block;
       margin-top: 133px;
       margin-bottom: 50px;
       font-size: 72px;
@@ -617,6 +619,7 @@ ul {
       line-height: 24px; } }
   @media (min-width: 1170px) {
     .header__intro {
+      display: block;
       width: 960px;
       min-height: 202px;
       font-size: 30px;
