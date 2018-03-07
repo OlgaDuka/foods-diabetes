@@ -524,6 +524,8 @@ ul {
 .header__panel {
   width: 320px;
   height: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -537,8 +539,9 @@ ul {
       padding-right: 40px; } }
   @media (min-width: 1170px) {
     .header__panel {
-      width: 300px;
+      width: 350px;
       height: 65px;
+      padding: 0 0 0 5px;
       -webkit-box-align: end;
           -ms-flex-align: end;
               align-items: flex-end; } }
@@ -546,11 +549,13 @@ ul {
 .header__logo {
   width: 145px;
   height: 30px;
-  border: 3px solid #f3f1f4; }
+  background-image: url("../images/logo.png");
+  background-repeat: no-repeat;
+  background-size: contain; }
   @media (min-width: 1170px) {
     .header__logo {
-      width: 263px;
-      height: 58px; } }
+      width: 265px;
+      height: 60px; } }
 
 .header__toggle {
   width: 25px;
@@ -999,7 +1004,7 @@ ul {
       position: absolute;
       top: 0;
       right: 0;
-      width: 10px;
+      width: 12px;
       height: 100%;
       background: transparent; } }
 
@@ -1018,7 +1023,7 @@ ul {
   width: 0; }
   @media (min-width: 1170px) {
     .jspTrack {
-      background: red;
+      background: #828183;
       position: relative;
       width: 4px;
       border-radius: 2px; } }
@@ -1215,12 +1220,12 @@ ul {
 .ideas__btn--prev {
   left: 40px;
   top: 29%;
-  background-image: url("../images/left-arrow-red.svg"); }
+  background-image: url("../images/left-arrow-white.svg"); }
 
 .ideas__btn--next {
   right: 40px;
   top: 29%;
-  background-image: url("../images/right-arrow-red.svg"); }
+  background-image: url("../images/right-arrow-white.svg"); }
 
 .ideas__link {
   display: block;
@@ -1497,6 +1502,7 @@ ul {
 
 .stat__description {
   font-size: 16px;
+  font-weight: 700;
   color: #f3f1f4;
   padding: 0;
   text-align: center; }
@@ -1657,11 +1663,17 @@ ul {
 
 .swiper-button-prev--4 {
   left: 15px;
-  background-image: url("../images/left-arrow-red.svg"); }
+  background-image: url("../images/left-arrow.svg"); }
+  @media (min-width: 1170px) {
+    .swiper-button-prev--4 {
+      background-image: url("../images/left-arrow-white.svg"); } }
 
 .swiper-button-next--4 {
   right: 15px;
-  background-image: url("../images/right-arrow-red.svg"); }
+  background-image: url("../images/right-arrow.svg"); }
+  @media (min-width: 1170px) {
+    .swiper-button-next--4 {
+      background-image: url("../images/right-arrow-white.svg"); } }
 
 .contacts {
   width: 100%;
@@ -1826,9 +1838,8 @@ ul {
   padding-left: 15px;
   margin-bottom: 7px;
   color: #f3f1f4;
-  background-color: #101010;
-  border: 1px solid transparent;
-  border-bottom: 1px solid #f3f1f4;
+  background-color: transparent;
+  border: 1px solid #f3f1f4;
   font-size: 12px;
   line-height: 18px;
   outline: none; }
@@ -1857,6 +1868,22 @@ ul {
 .form__textarea:focus + .form__label {
   color: #f3f1f4; }
 
+:focus::-webkit-input-placeholder {
+  opacity: 0; }
+
+/* webkit */
+:focus::-moz-placeholder {
+  opacity: 0; }
+
+/* Firefox 19+ */
+:focus:-moz-placeholder {
+  opacity: 0; }
+
+/* Firefox 18- */
+:focus:-ms-input-placeholder {
+  opacity: 0; }
+
+/* IE */
 .form__btn {
   -ms-flex-item-align: center;
       align-self: center;
@@ -1890,7 +1917,7 @@ ul {
 
 .footer {
   min-height: 70px;
-  background-color: #181818; }
+  background-color: #000000; }
   @media (min-width: 1170px) {
     .footer {
       min-height: 30px; } }

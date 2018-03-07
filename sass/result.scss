@@ -168,10 +168,18 @@
 
 .swiper-button-prev--4 {
   left: 15px;
-  background-image: url('../images/left-arrow-red.svg');
+  background-image: url('../images/left-arrow.svg');
+
+  @media (min-width: $desktop-width) {
+    background-image: url('../images/left-arrow-white.svg');
+  }
 }
 
 .swiper-button-next--4 {
   right: 15px;
-  background-image: url('../images/right-arrow-red.svg');
+  background-image: url('../images/right-arrow.svg');
+
+  @media (min-width: $desktop-width) {
+    background-image: url('../images/right-arrow-white.svg');
+  }
 }

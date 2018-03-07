@@ -21,7 +21,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    width: 10px;
+    width: 12px;
     height: 100%;
     background: transparent;
   }
@@ -44,7 +44,7 @@
   width: 0;
 
   @media (min-width: $desktop-width) {
-    background: red;
+    background: #828183;
     position: relative;
     width: 4px;
     border-radius: 2px;

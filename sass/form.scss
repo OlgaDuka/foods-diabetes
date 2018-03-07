@@ -78,9 +78,8 @@
   padding-left: 15px;
   margin-bottom: 7px;
   color: $light-color;
-  background-color: #101010;
-  border: 1px solid transparent;
-  border-bottom: 1px solid $light-color;
+  background-color: transparent;
+  border: 1px solid $light-color;
   font-size: 12px;
   line-height: 18px;
   outline: none;
@@ -117,6 +116,11 @@
 .form__textarea:focus +  .form__label {
   color: $light-color;
 }
+
+:focus::-webkit-input-placeholder {opacity:0;}/* webkit */
+:focus::-moz-placeholder          {opacity:0;}/* Firefox 19+ */
+:focus:-moz-placeholder           {opacity:0;}/* Firefox 18- */
+:focus:-ms-input-placeholder      {opacity:0;}/* IE */
 
 .form__btn {
   align-self: center;
