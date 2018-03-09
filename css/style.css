@@ -1654,7 +1654,7 @@ ul {
 .swiper-button-prev--4 {
   width: 20px;
   height: 35px;
-  top: 25%;
+  top: 22%;
   background-repeat: no-repeat; }
   @media (min-width: 1170px) {
     .swiper-button-next--4,
@@ -1840,6 +1840,7 @@ ul {
   color: #f3f1f4;
   background-color: transparent;
   border: 1px solid #f3f1f4;
+  font-family: inherit;
   font-size: 12px;
   line-height: 18px;
   outline: none; }
