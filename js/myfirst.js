@@ -1,5 +1,28 @@
 'use strict';
 $(function () {
+// Меню
+  var header = document.querySelector('.header');
+  var toggle = header.querySelector('.header__toggle');
+  var menu = header.querySelector('.menu');
+  var title = header.querySelector('.header__title');
+  var intro = header.querySelector('.header__intro');
+
+  menu.classList.remove('menu--close');
+  toggle.classList.add('header__toggle--cross');
+  title.classList.add('header__title--hidden');
+  intro.classList.add('header__intro--hidden');
+  $('.header__menu').slideToggle();
+  toggle.classList.toggle('header__toggle--cross');
+  title.classList.toggle('header__title--hidden');
+  intro.classList.toggle('header__intro--hidden');
+
+  $('.header__toggle').click(function () {
+    $('.header__menu').slideToggle();
+    toggle.classList.toggle('header__toggle--cross');
+    title.classList.toggle('header__title--hidden');
+    intro.classList.toggle('header__intro--hidden');
+  });
+
   // Слайдер Партнеры
   var swiper1 = new Swiper('.swiper-container--1', {
     slidesPerView: 'auto',
