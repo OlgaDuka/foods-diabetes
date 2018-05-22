@@ -944,31 +944,29 @@ ul {
     .swiper-container--1 {
       width: 1140px; } }
 
-.swiper-slide--slide1, .swiper-slide--slide2, .swiper-slide--slide3, .swiper-slide--slide4 {
+.swiper-slide {
   max-width: 280px;
-  background-repeat: no-repeat;
-  background-size: auto;
-  background-position: center;
-  -ms-flex-item-align: center;
-      align-self: center; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
   @media (min-width: 768px) {
-    .swiper-slide--slide1, .swiper-slide--slide2, .swiper-slide--slide3, .swiper-slide--slide4 {
+    .swiper-slide {
       max-width: 240px; } }
   @media (min-width: 1170px) {
-    .swiper-slide--slide1, .swiper-slide--slide2, .swiper-slide--slide3, .swiper-slide--slide4 {
+    .swiper-slide {
       max-width: 280px; } }
 
-.swiper-slide--slide1 {
-  background-image: url("../images/auchan.jpg"); }
+.partner__link:hover {
+  opacity: 0.5; }
 
-.swiper-slide--slide2 {
-  background-image: url("../images/multiplex.jpg"); }
-
-.swiper-slide--slide3 {
-  background-image: url("../images/eurovision.jpg"); }
-
-.swiper-slide--slide4 {
-  background-image: url("../images/yarich.jpg"); }
+.partner__link:active {
+  opacity: 0.25; }
 
 .swiper-button-next--1,
 .swiper-button-prev--1 {

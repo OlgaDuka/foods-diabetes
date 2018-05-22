@@ -51,15 +51,10 @@
 }
 
 .swiper-slide {
-  &--slide1,
-  &--slide2,
-  &--slide3,
-  &--slide4, {
     max-width: 280px;
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-position: center;
-    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     @media (min-width: $tablet-width) {
       max-width: 240px;
@@ -68,22 +63,15 @@
     @media (min-width: $desktop-width) {
       max-width: 280px;
     }
+}
+
+.partner__link {
+  &:hover {
+    opacity: 0.5;
   }
 
-  &--slide1 {
-    background-image: url('../images/auchan.jpg');
-  }
-
-  &--slide2 {
-    background-image: url('../images/multiplex.jpg');
-  }
-
-  &--slide3 {
-    background-image: url('../images/eurovision.jpg');
-  }
-
-  &--slide4 {
-    background-image: url('../images/yarich.jpg');
+  &:active {
+    opacity: 0.25;
   }
 }
 

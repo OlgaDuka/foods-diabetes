@@ -7,6 +7,7 @@ var postcss = require('gulp-postcss');
 var autoprefixer = require('autoprefixer');
 var minify = require('gulp-csso');
 var rename = require('gulp-rename');
+var urlAdjuster = require('gulp-css-url-adjuster');
 var svgstore = require('gulp-svgstore');
 var svgmin = require('gulp-svgmin');
 var imagemin = require('gulp-imagemin');
@@ -80,6 +81,33 @@ gulp.task('copy', function () {
     base: '.'
   })
       .pipe(gulp.dest('build'));
+});
+
+// Копирование файлов для Wordpress (кроме главного файла стилей)
+gulp.task('wp', function () {
+  return gulp.src([
+    'css/**',
+    '!css/style.css',
+    'fonts/**',
+    'images/**',
+    '!images/svg{,/**}',
+    '!images/sprite.svg',
+    'js/*.js',
+    '*.html',
+    'wp/*.php'
+  ], {
+    base: '.'
+  })
+      .pipe(gulp.dest('Y:/domains/foods-diabetes/wp-content/themes/foods-diabetes'));
+});
+
+// Копирование стилей для Wordpress с заменой путей на изображения и шрифты
+gulp.task('wp-css', function () {
+  return gulp.src('css/style.css').
+  pipe(urlAdjuster({
+    replace: ['../','']
+  }))
+  .pipe(gulp.dest('Y:/domains/foods-diabetes/wp-content/themes/foods-diabetes'));
 });
 
 // Очистка билда
