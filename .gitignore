@@ -5,7 +5,6 @@
 *.pdf
 *.psd
 build
-wp/*.*
 images/svg
 images/sprite.svg
 img
