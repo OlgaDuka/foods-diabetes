@@ -944,7 +944,7 @@ ul {
     .swiper-container--1 {
       width: 1140px; } }
 
-.swiper-slide {
+.swiper-slide--partner {
   max-width: 280px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -956,10 +956,10 @@ ul {
       -ms-flex-align: center;
           align-items: center; }
   @media (min-width: 768px) {
-    .swiper-slide {
+    .swiper-slide--partner {
       max-width: 240px; } }
   @media (min-width: 1170px) {
-    .swiper-slide {
+    .swiper-slide--partner {
       max-width: 280px; } }
 
 .partner__link:hover {
