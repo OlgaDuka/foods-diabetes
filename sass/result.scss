@@ -38,6 +38,7 @@
   margin: 0 auto;
   width: 100%;
   min-height: 467px;
+  background-color: #ffffff;
 
   @media (min-width: $desktop-width) {
     width: $desktop-width;
@@ -54,6 +55,7 @@
   @media (min-width: $desktop-width) {
     flex-direction: row;
     justify-content: space-between;
+    border: 3px solid #000000;
   }
 }
 
@@ -86,8 +88,8 @@
 
   @media (min-width: $desktop-width) {
     width: 585px;
-    height: 467px;
-    padding: 60px 100px;
+    min-height: 467px;
+    padding: 40px 60px;
     background-color: #000000;
     color: $light-color;
   }
@@ -121,7 +123,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    max-height: 268px;
+    max-height: 240px;
     font-size: 18px;
     margin: 12px 0 24px;
     text-align: left;

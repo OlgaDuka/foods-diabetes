@@ -98,7 +98,7 @@ gulp.task('wp', function () {
   ], {
     base: '.'
   })
-      .pipe(gulp.dest('Y:/domains/foods-diabetes/wp-content/themes/foods-diabetes'));
+      .pipe(gulp.dest('Y:/domains/diabet/wp-content/themes/diabet'));
 });
 
 // Копирование стилей для Wordpress с заменой путей на изображения и шрифты
@@ -107,7 +107,7 @@ gulp.task('wp-css', function () {
   pipe(urlAdjuster({
     replace: ['../','']
   }))
-  .pipe(gulp.dest('Y:/domains/foods-diabetes/wp-content/themes/foods-diabetes'));
+  .pipe(gulp.dest('Y:/domains/diabet/wp-content/themes/diabet'));
 });
 
 // Очистка билда

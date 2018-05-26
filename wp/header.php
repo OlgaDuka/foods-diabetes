@@ -16,7 +16,9 @@
     <header class="header" id="home">
       <div class="header__top">
         <div class="header__panel">
-          <div class="header__logo"></div>
+          <div class="header__logo">
+            <?php the_custom_logo($ blog_id); ?>
+          </div>
           <button class="header__toggle header__toggle--cross" type="button"></button>
         </div>
         <?php if(!dynamic_sidebar('menu_id')): ?>
