@@ -8,15 +8,16 @@ function load_style_script(){
 
 	wp_enqueue_script('jquery', $template_url.'/js/jquery.min.js');
 	wp_enqueue_script('jqMousewheel', $template_url.'/js/jquery.mousewheel.min.js', array('jquery'), '1.0', true);
+	if ( is_home() ) {
+		wp_enqueue_script('custom_menu', $template_url.'/js/custom_menu.min.js', array('jquery'), '1.0', true);
+		wp_enqueue_script('swiper', $template_url.'/js/swiper.min.js', array(), 'null', true);
+		wp_enqueue_script('mySwiper',$template_url.'/js/my_swiper.min.js', array('swiper'), '1.0', true);
+		wp_enqueue_style('cssSwiper', $template_url.'/css/swiper.min.css');
+	}
 	wp_enqueue_script('jqScrollpane', $template_url.'/js/jquery.jscrollpane.min.js', array('jquery'), '1.0', true);
-	wp_enqueue_script('jqSwiper', $template_url.'/js/swiper.min.js', array('jquery'), '1.0', true);
-	wp_enqueue_script('jqCustom', $template_url.'/js/custom.min.js', array('jquery'), '1.0', true);
-	wp_enqueue_script('jqMyfirst',$template_url.'/js/myfirst.js', array('jquery'), '1.0', true);
-
-	wp_enqueue_style('cssSwiper', $template_url.'/css/swiper.min.css');
+	wp_enqueue_script('myScroll', $template_url.'/js/my_scroll.min.js', array('jquery'), '1.0', true);
 	wp_enqueue_style('cssStyle', $template_url.'/style.css');
 }
-
 /**
 * загружаем скрипты и стили
 */

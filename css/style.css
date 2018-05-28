@@ -1,10 +1,10 @@
 @charset "UTF-8";
 /*
-Theme Name: Food-Diabetes
-Theme URI: foods-diabetes/
+Theme Name: diabet
+Theme URI: diabet/
 Description: Лэндинг для социального проекта
 Author: Ольга
-Author URI: foods-diabetes/
+Author URI: diabet/
 Version: 1.0
 */
 /* stylelint-disable */
@@ -419,7 +419,7 @@ body {
   font-size: 16px;
   color: #282828;
   line-height: 1.25;
-  background-color: #e8e8e8;
+  background-color: #ffffff;
   overflow-x: hidden; }
 
 img {
@@ -452,6 +452,28 @@ ul {
           clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden; }
+
+.content {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  min-width: 320px; }
+  .content__title {
+    margin: 0 auto;
+    font-family: "RuslanDisplay", "Arial", sans-serif;
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #282828;
+    text-align: center; }
+    @media (min-width: 768px) {
+      .content__title {
+        font-size: 34px;
+        line-height: 42px; } }
+    @media (min-width: 1170px) {
+      .content__title {
+        font-size: 42px;
+        line-height: 48px; } }
 
 .scroll__arrow-up {
   width: 70px;
@@ -496,6 +518,14 @@ ul {
   @media (min-width: 1170px) {
     .header {
       min-height: 800px; } }
+  .header--page {
+    min-height: 180px; }
+    @media (min-width: 768px) {
+      .header--page {
+        min-height: 240px; } }
+    @media (min-width: 1170px) {
+      .header--page {
+        min-height: 400px; } }
 
 .header__top {
   margin: 0 auto;
@@ -551,10 +581,7 @@ ul {
 
 .header__logo {
   width: 145px;
-  height: 40px;
-  background-image: url("../images/logo.png");
-  background-repeat: no-repeat;
-  background-size: contain; }
+  height: 40px; }
   @media (min-width: 768px) {
     .header__logo {
       height: 50px; } }
@@ -612,6 +639,15 @@ ul {
       margin-bottom: 50px;
       font-size: 72px;
       line-height: 55px; } }
+
+.header--page .header__title {
+  margin-top: 20px; }
+  @media (min-width: 768px) {
+    .header--page .header__title {
+      font-size: 34px; } }
+  @media (min-width: 1170px) {
+    .header--page .header__title {
+      font-size: 50px; } }
 
 .header__intro {
   margin: 0 auto;
@@ -755,8 +791,7 @@ ul {
   @media (min-width: 1170px) {
     .tasks {
       min-height: 850px;
-      background-position: top left;
-      background-size: auto; } }
+      background-position: top left; } }
 
 .tasks__container {
   width: 320px;
@@ -1194,29 +1229,24 @@ ul {
     max-width: 768px;
     font-size: 14px; } }
 
-.ideas__slide {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  min-height: 200px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: #f3f1f4; }
-  @media (min-width: 1170px) {
-    .ideas__slide {
-      margin-bottom: 20px;
-      min-height: auto;
-      -webkit-box-align: end;
-          -ms-flex-align: end;
-              align-items: flex-end; } }
+@media (min-width: 1170px) {
+  .ideas__slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    min-height: 200px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    color: #f3f1f4;
+    margin-bottom: 20px;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end; } }
 
 /*.ideas__btn {
   display: block;
@@ -1706,6 +1736,36 @@ ul {
   @media (min-width: 1170px) {
     .swiper-button-next--4 {
       background-image: url("../images/right-arrow-white.svg"); } }
+
+.gallery {
+  margin: 0 auto;
+  padding-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.slideshowlink a {
+  font-family: "ProximaNova", "Arial", sans-serif;
+  color: #282828;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px; }
+  .slideshowlink a:hover {
+    opacity: 0.6;
+    text-decoration: underline; }
+  .slideshowlink a:active {
+    opacity: 0.3;
+    text-decoration: none; }
 
 .contacts {
   width: 100%;

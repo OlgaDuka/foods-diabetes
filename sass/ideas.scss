@@ -141,20 +141,13 @@
 }
 
 .ideas__slide {
-  display: flex;
-  min-height: 200px;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  color: $light-color;
-
-  //&--active {
-  //  display: flex;
-  //}
-
   @media (min-width: $desktop-width) {
+    display: flex;
+    min-height: 200px;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: $light-color;
     margin-bottom: 20px;
-    min-height: auto;
     align-items: flex-end;
   }
 }

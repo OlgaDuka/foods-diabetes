@@ -12,6 +12,7 @@ $(function () {
     $('.header__title').removeClass('header__title--hidden');
     $('.header__intro').removeClass('header__intro--hidden');
   }
+
   $('.header__toggle').click(function () {
     $('.header__menu').slideToggle('slow');
     $('.header__title').slideToggle('fast');
@@ -33,41 +34,6 @@ $(function () {
     }
   });
 
-  // -------------------------------------------------------------------
-  // Оживление слайдеров с помощью плагина Swiper (работает без JQuery)
-  // --------------------------------------------------------------------
-  // Слайдер Партнеры
-  var swiper1 = new Swiper('.swiper-container--1', {
-    slidesPerView: 'auto',
-    spaceBetween: 0,
-    slidesPerGroup: 1,
-    loop: true,
-    loopFillGroupWithBlank: true,
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  });
-  // Слайдер Наша команда
-  var swiper3 = new Swiper('.swiper-container--3', {
-    slidesPerView: 'auto',
-    spaceBetween: 0,
-    slidesPerGroup: 1,
-    loop: true,
-    loopFillGroupWithBlank: true,
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  });
-  // Слайдер Результаты работы
-  var swiper4 = new Swiper('.swiper-container--4', {
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  });
-
   // -------------------------------------------------------------
   // Стандартные функции JQuery для скроллинга
   // -------------------------------------------------------------
@@ -80,21 +46,6 @@ $(function () {
     var top = $(id).offset().top;
     // анимируем переход на расстояние - top за 1500 мс
     $('body,html').animate({scrollTop: top}, 1500);
-  });
-  // Появление и исчезновение кнопки "наверх" на первом экране
-  var limit = $(window).height() / 3;
-  var $backToTop = $('#scroll-up');
-  $(window).scroll(function () {
-    if ($(this).scrollTop() > limit) {
-      $backToTop.fadeIn();
-    } else {
-      $backToTop.fadeOut();
-    }
-  });
-  // Мягкий скролл к началу сайта
-  $backToTop.click(function () {
-    $('body,html').animate({scrollTop: 0}, 1500);
-    return false;
   });
 
   // Скроллинг на десктопной версии блока идей потребителей

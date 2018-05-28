@@ -14,6 +14,18 @@
   @media (min-width: $desktop-width) {
     min-height: 800px;
   }
+
+  &--page {
+    min-height: 180px;
+
+    @media (min-width: $tablet-width) {
+      min-height: 240px;
+    }
+
+    @media (min-width: $desktop-width) {
+      min-height: 400px;
+    }
+  }
 }
 
 .header__top {
@@ -59,9 +71,6 @@
 .header__logo {
   width: 145px;
   height: 40px;
-  background-image: url('../images/logo.png');
-  background-repeat: no-repeat;
-  background-size: contain;
 
   @media (min-width: $tablet-width) {
     height: 50px;
@@ -128,6 +137,20 @@
     margin-bottom: 50px;
     font-size: 72px;
     line-height: 55px;
+  }
+}
+
+.header--page {
+  .header__title {
+    margin-top: 20px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 34px;
+    }
+
+    @media (min-width: $desktop-width) {
+      font-size: 50px;
+    }
   }
 }
 

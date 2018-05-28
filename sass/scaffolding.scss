@@ -8,7 +8,7 @@ body {
   font-size: 16px;
   color: $darktext-color;
   line-height: 1.25;
-  background-color: rgb(232, 232, 232);
+  background-color: #ffffff;
   overflow-x: hidden;
 }
 
@@ -46,6 +46,33 @@ ul {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.content {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  min-width: $panel-width;
+
+  &__title {
+    margin: 0 auto;
+    font-family: $title-font;
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: $darktext-color;
+    text-align: center;
+
+    @media (min-width: $tablet-width) {
+      font-size: 34px;
+      line-height: 42px;
+    }
+
+    @media (min-width: $desktop-width) {
+      font-size: 42px;
+      line-height: 48px;
+    }
+  }
 }
 
 .scroll__arrow-up {

@@ -78,24 +78,33 @@
       <section class="ideas" id="ideas">
         <div class="ideas__container">
           <h2 class="ideas__title">Запросы потребителей</h2>
+
+		<?php $query = new WP_Query(array(
+          'category_name' => 'opinion',
+          'orderby' => 'title',
+          'order' => 'ASC'
+        )) ?>
+
           <div class="scroll-pane">
             <div class="ideas__wrapper">
 
-              <?php if (have_posts()) :
-                query_posts('cat=4');
-                 while (have_posts()) : the_post(); ?>
-                  <div class="ideas__slide ideas__slide--desktop">
+            <?php if ($query->have_posts()) :  while ($query->have_posts()) : $query->the_post(); ?>
+
+				<div class="ideas__slide">
                     <h3 class="ideas__author"><?php the_title(); ?></h3>
-                    <div class="ideas__text"><?php the_content(); ?></div>
-                  </div>
-              <?php endwhile; ?>
-              <?php wp_reset_query(); ?>
-              <?php endif; ?>
-            </div>
+                    <?php the_content(); ?>
+                </div>
+
+            <?php endwhile; ?>
+              <?php wp_reset_postdata(); // сбрасываем переменную $post ?>
+            <?php else: ?>
+              <h2>Записей нет.</h2>
+            <?php endif; ?>
+
+			</div>
           </div>
-          <div class="ideas__btn ideas__btn--prev"></div>
-          <div class="ideas__btn ideas__btn--next"></div>
-          <a href="#contacts" class="ideas__link">Написать нам</a>
+		  <p class="ideas__note">Напиши нам, и мы свяжемся с твоей любимой кафешкой, пиццерией,  гастро-баром,  рестораном  и  предложим им визит нашего диетолога-ревизора,  который  проведет  тщательную  экспертизу всего меню.</p>
+		  <a href="#contacts" class="ideas__link">Написать нам</a>
         </div>
       </section>
 
@@ -240,40 +249,4 @@
 
       </section>
 
-      <section class="contacts" id="contacts">
-        <div class="contacts__container">
-          <h2 class="contacts__title">Свяжитесь с нами</h2>
-          <div class="contacts__form form">
-            <?php if(!dynamic_sidebar('feedback_id')): ?>
-            <?php endif; ?>
-          </div>
-          <p class="contacts__data">
-            <svg class="contacts__icon" width="26" height="26" aria-label="Address">
-              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#maps-and-flags"></use>
-            </svg>г. КИЕВ, УЛИЦА ХРЕЩАТИК, 1
-          </p>
-          <p class="contacts__data">
-            <a href="tel:+38-(097)-88-88-888">
-              <svg class="contacts__icon" width="26" height="26" aria-label="Phone">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#phone-receiver"></use>
-              </svg>+38-(097)-88-88-888
-            </a>
-          </p>
-          <p class="contacts__data contacts__data--email">
-            <a  href="mailto:foodanddiabetes@gmail.com">
-              <svg class="contacts__icon" width="26" height="26" aria-label="Email">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close-envelope"></use>
-              </svg>foodanddiabetes@gmail.com
-            </a>
-          </p>
-          <p class="contacts__data contacts__data--social">
-            <a href="https://www.facebook.com/FoodAndDiabetes/">
-              <svg class="contacts__icon" width="26" height="26" aria-label="fb">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#facebook"></use>
-              </svg>Наша страница в Facebook
-            </a>
-          </p>
-        </div>
-      </section>
-    </main>
 <?php get_footer(); ?>
